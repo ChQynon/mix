@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "env": {
+    "ONLYSQ_URL": "http://api.onlysq.ru/ai/v2",
+    "ONLYSQ_MODEL": "mirexa"
+  }
+}
+
+
