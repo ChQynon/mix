@@ -3,6 +3,11 @@
   "builds": [
     { "src": "api/**/*.js", "use": "@vercel/node" }
   ],
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "env": {
     "ONLYSQ_URL": "http://api.onlysq.ru/ai/v2",
     "ONLYSQ_MODEL": "mirexa"
